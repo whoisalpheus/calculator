@@ -7,9 +7,11 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     gap: 5px;
-    width: 500px;
-    height: 500px;
+    padding:10px;
+    width: 250px;
+    height: 250px;
 }
 
 .displayDiv {
@@ -19,25 +21,30 @@ body {
 
 #display {
     height: 25px;
-    width: 250px;
+    width: 150px;
 }
 
-.numDiv {
+.btnDiv {
     display: flex;
     justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
-    width: 100px;
-    height: 100px;
+    width: 175px;
 }
 
 .numBtns {
-    width: 25px;
-    height: 25px;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
+
+.operBtns {
+    width: 35px;
+    height: 35px;
 }
 
 /* Order of numbers */
-/* #zeroBtn {order: 0;}
+#zeroBtn {order: 0;}
 #oneBtn {order: 0;}
 #twoBtn {order: 0;}
 #threeBtn {order: 0;}
@@ -46,16 +53,11 @@ body {
 #sixBtn {order: 0;}
 #sevenBtn {order: 0;}
 #eightBtn {order: 0;}
-#nineBtn {order: 0;} */
-
-.operatorDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 5px;
-}
-
-.operBtns {
-    width: 25px;
-    height: 25px;
-}
+#nineBtn {order: 0;}
+#addBtn {order: 0;}
+#subBtn {order: 0;}
+#multBtn {order: 0;}
+#divideBtn {order: 0;}
+#equalBtn {order: 0;}
+#clearBtn {order: 0;}
+#decimalBtn {order: 0;}
