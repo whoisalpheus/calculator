@@ -59,11 +59,6 @@ body {
     color: lightskyblue;
 }
 
-#decimalBtn {
-    background-color: darkslategray;
-    color: cadetblue;
-}
-
 /* Order of buttons (17 total)*/
 #zeroBtn {order: 16;}
 #oneBtn {order: 12;}
