@@ -22,6 +22,12 @@ body {
 #display {
     height: 25px;
     width: 150px;
+    background-color: #1ccec2;
+    color: darkslategray;
+}
+
+::placeholder {
+    color: darkslategrey;
 }
 
 .btnDiv {
@@ -36,28 +42,45 @@ body {
     align-items: center;
     width: 35px;
     height: 35px;
+    color: cadetblue;
+    background-color: darkslategray;
 }
 
 .operBtns {
     width: 35px;
     height: 35px;
+    color: darkslategray;
+    background-color: coral;
 }
 
-/* Order of numbers */
-#zeroBtn {order: 0;}
-#oneBtn {order: 0;}
-#twoBtn {order: 0;}
-#threeBtn {order: 0;}
-#fourBtn {order: 0;}
-#fiveBtn {order: 0;}
-#sixBtn {order: 0;}
-#sevenBtn {order: 0;}
-#eightBtn {order: 0;}
-#nineBtn {order: 0;}
-#addBtn {order: 0;}
-#subBtn {order: 0;}
-#multBtn {order: 0;}
-#divideBtn {order: 0;}
-#equalBtn {order: 0;}
+#equalBtn {
+    width: 75px;
+    background-color: #731010;
+    color: lightskyblue;
+}
+
+#decimalBtn {
+    background-color: darkslategray;
+    color: cadetblue;
+}
+
+/* Order of buttons (17 total)*/
+#zeroBtn {order: 16;}
+#oneBtn {order: 12;}
+#twoBtn {order: 13;}
+#threeBtn {order: 14;}
+#fourBtn {order: 8;}
+#fiveBtn {order: 9;}
+#sixBtn {order: 10;}
+#sevenBtn {order: 4;}
+#eightBtn {order: 5;}
+#nineBtn {order: 6;}
+#addBtn {order: 3;}
+#subBtn {order: 7;}
+#multBtn {order: 11;}
+#divideBtn {order: 15;}
+#equalBtn {order: 18;}
 #clearBtn {order: 0;}
-#decimalBtn {order: 0;}
+#decimalBtn {order: 17;}
+#negPosBtn {order: 1;}
+#percentBtn {order: 2;}
