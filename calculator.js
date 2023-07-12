@@ -11,6 +11,13 @@ const multiplyBtn = document.querySelector('#multBtn');
 const divideBtn = document.querySelector('#divideBtn');
 const negPosBtn = document.querySelector('#negPosBtn');
 const percentBtn = document.querySelector('#percentBtn');
+let num1 = '';
+let num2 = '';
+let operator = '';
+
+// function operate(num1, operator, num2) {
+//   const num1 = display.value;
+// }
 
 // When each number button is pressed
 // Display in display input
@@ -23,32 +30,40 @@ numbers.forEach(number => number.addEventListener('click', (e) => {
 // Or keep the value in display until operBtn pressed
 // If numbers are clicked
 // Keep display.value in display box
+// +=
 
-// numbers.forEach(number => number.addEventListener('click', updateDisplay));
+// Clear button
+clear.addEventListener('click', clearDisplay);
 
-// function updateDisplay(event) {
-//   if(validValue(event.target.value)) {
-//     display.setAttribute('value', event.target.value);
-//   }
-// }
+function clearDisplay() {
+  display.value = '';
+}
 
-// function validValue(value) {
-//   for(let i = 0; i < validBtnPress.length; i++) {
-//     if(value == validBtnPress[i]) {
-//       return true;
-//     }
-//   } return false;
-// }
+// Highlight operation function buttons (+, -, *, /)
+addBtn.addEventListener('click', () => {
+  addBtn.style.border = 'thick double #07562f';
+})
+subtractBtn.addEventListener('click', () => {
+  subtractBtn.style.border = 'thick double #07562f';
+})
 
-// Operator button functions
-// Link this to add button
-// const add = function(a, b) {
-//     return a + b;
+divideBtn.addEventListener('click', () => {
+  divideBtn.style.border = 'thick double #07562f';
+})
+
+multiplyBtn.addEventListener('click', () => {
+  multiplyBtn.style.border = 'thick double #07562f';
+})
+
+// // Operator button functions
+// // Link this to add button
+// const add = function(num1, num2) {
+//     return num1 + num2;
 //   };
   
 //   // Link this to subtract button
-//   const subtract = function(a, b) {
-//       let difference = a - b;
+//   const subtract = function(num1, num2) {
+//       let difference = num1 - num2;
 //     return difference;
 //   };
 
