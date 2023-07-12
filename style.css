@@ -18,13 +18,13 @@ body {
     display: flex;
     justify-content: center;
 }
-
+ 
 #display {
     height: 25px;
     width: 150px;
     background-color: #1ccec2;
     color: darkslategray;
-}
+} 
 
 ::placeholder {
     color: darkslategrey;

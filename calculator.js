@@ -14,13 +14,31 @@ const percentBtn = document.querySelector('#percentBtn');
 
 // When each number button is pressed
 // Display in display input
+
 numbers.forEach(number => number.addEventListener('click', (e) => {
-  display.value = e.target.textContent;
+  display.value += e.target.textContent;
 }))
+
 // Keep selected numBtn in display until operator button is pushed
 // Or keep the value in display until operBtn pressed
 // If numbers are clicked
 // Keep display.value in display box
+
+// numbers.forEach(number => number.addEventListener('click', updateDisplay));
+
+// function updateDisplay(event) {
+//   if(validValue(event.target.value)) {
+//     display.setAttribute('value', event.target.value);
+//   }
+// }
+
+// function validValue(value) {
+//   for(let i = 0; i < validBtnPress.length; i++) {
+//     if(value == validBtnPress[i]) {
+//       return true;
+//     }
+//   } return false;
+// }
 
 // Operator button functions
 // Link this to add button
